@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="authore" content="hamza laqraa">
+    <link rel="stylesheet" href="style.css">
+    <title>Maisons Appartements</title>
+</head>
+<body>
+    <header>
+        <div class="generale">
+        <div class="image">
+            <img alt="logo" src="index.png" width="200px" />
+        </div>
+        <div class="contenu">
+            <ul>
+                <li><a href=""><strong>HOME</strong></a></li>
+                <li><a href=""><strong>ABOUT-US</strong></a></li>
+                <li><a href=""><strong>CONTACTE</strong></a></li>
+                <li><a href=""><strong>OFFERS</strong></a></li>
+            </ul>
+        </div>
+    </div>
+    </header>
+    <nav >
+        <ul class="description">
+            <li><a href=""><strong>Acheter</strong></a></li>
+            <li><a href=""><strong>Louer</strong></a></li>
+            <li><a href=""><strong>Vendre</strong></a></li>
+          </ul><br><br>
+    </nav>
+    <main>
+          <div class="ok">
+          <h1>Immobilier de luxe</h1><br>
+          <p>
+            Plus de 100 000 villas et appartements de luxe proposés
+             par les meilleures agences immobilières 
+            locales dans les régions les plus prestigieuses du monde.
+            Trouvez la maison de vos rêves  élargissez votre
+             recherche vers de nouveaux horizons. Vous trouverez forcément 
+            votre bonheur parmi nos 2 millions de propriétés.
+        </p>
+    </div>
+    <div class="formulaire">
+        <h1>Formulaire de recherche</h1><br>
+        <form action="ma-page-de-traitement.php" method="post">
+            <div>
+                <label for="rayon">rayon de recherche :</label>
+                <input type="text" id="rayon" name="rayon_recherche">
+            </div><br>
+            <div>
+                <label for="cowbell">fourchette de prix</label>
+                <input type="range" id="prix" name="prix" 
+                       min="0" max="100000" value="90" step="1">
+              </div><br>
+            <div>
+                <label for="chambre">chambre :</label>
+                <input type="number" id="chambre" name="chambre" min="1" max="10">
+            </div><br>
+            <div>
+                <label for="propriété">type de propriété :</label>
+                <select id="propriété" name="propriété"> 
+                    <option value="co">copropriété</option>
+                    <option value="ddp">démembrement de propriété</option>
+                    <option value="ind">indivision</option>
+                    <option value="vvt">Viager et vente à terme</option>
+                  </select>
+            </div><br>
+            <button type="button">
+                 Recherche
+                   </button>
+        </form>
+    </div>
+</main>
+</body>
+</html>  
